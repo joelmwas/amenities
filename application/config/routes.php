@@ -45,10 +45,10 @@ $route['404_override'] = '';
 $route['admin'] = 'admin/user/index';
 $route['admin/services'] = 'admin/services';
 $route['admin/signup'] = 'admin/user/signup';
-$route['admin/create_member'] = 'user/create_member';
-$route['admin/login'] = 'user/index';
-$route['admin/logout'] = 'user/logout';
-$route['admin/login/validate_credentials'] = 'user/validate_credentials';
+$route['admin/create_member'] = 'admin/user/create_member';
+$route['admin/login'] = 'admin/user/index';
+$route['admin/logout'] = 'admin/user/logout';
+$route['admin/login/validate_credentials'] = 'admin/user/validate_credentials';
 
 
 /* End of file routes.php */

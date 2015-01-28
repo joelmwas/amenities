@@ -57,7 +57,7 @@ class User extends CI_Controller {
             }
             else
             {
-                $this->load->view('admin/signup_form');
+                $this->load->view('admin/signup');
             }
         }
 
