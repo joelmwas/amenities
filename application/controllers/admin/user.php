@@ -62,4 +62,32 @@ class User extends CI_Controller {
         }
 
     }
+
+
+    /* check the username and the password with the database */
+    function validate_credentials()
+    {
+
+        $this->load->model('users_model');
+
+        $user_name = $this->input->post('user_name');
+        $password = $this->__encrypt_password($this->input->post('password'));
+
+        $is_valid = $this->users_model->validate($user_name, $password);
+
+        if($is_valid)
+        {
+            $data = array(
+                'user_name' => $user_name,
+                'is_logged_in' => true
+            );
+            $this->session->set_userdata($data);
+            redirect('admin/services');
+        }
+        else // incorrect username or password
+        {
+            $data['message_error'] = TRUE;
+            $this->load->view('admin/login', $data);
+        }
+    }
 }
