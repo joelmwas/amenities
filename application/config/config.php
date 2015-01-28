@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '';
+$config['base_url']	= 'http://localhost/amenities';
 
 /*
 |--------------------------------------------------------------------------
@@ -224,7 +224,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = '2717uhu8923yuu2&&^@%RYYGuh2iu2IUGhhiuhiu(*&!R@CVHKJI@UG@GYGWBH@UG@Y*@)(U(U@HG';
 
 /*
 |--------------------------------------------------------------------------
